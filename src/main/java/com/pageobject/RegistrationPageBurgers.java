@@ -26,7 +26,7 @@ public class RegistrationPageBurgers {
     private SelenideElement login;
     //локатор текста "Некорректный пароль"
     @FindBy(how = How.XPATH,using = ".//p[@class='input__error text_type_main-default']")
-    private SelenideElement unCorrectPassword;
+    private SelenideElement inCorrectPassword;
 
     //метод заполнения поля "Имя"
     public void setNameField(String name) {
@@ -60,8 +60,8 @@ public class RegistrationPageBurgers {
     }
     //метод нахождения текста "Некорректный пароль"
     public boolean isUnCorrectPasswordDisplayed() {
-        unCorrectPassword.shouldBe(visible);
-        return unCorrectPassword.isDisplayed();
+        inCorrectPassword.shouldBe(visible);
+        return inCorrectPassword.isDisplayed();
     }
 }
 

@@ -18,8 +18,7 @@ public class MainPageBurgersYandexTests extends BaseBurgers {
     @Before
     public void setup() {
 
-        //открыть браузер в максимальном разрешении
-        Configuration.startMaximized = true;
+        Configuration.browserSize = "1980x1000";
 
         //запустить Яндекс браузер
         startYandexBrowser();
@@ -53,7 +52,7 @@ public class MainPageBurgersYandexTests extends BaseBurgers {
         MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
         //проверить на дисплее заголовок "Булки"
-        assertTrue(mainPage.isHeaderBunsVisible());
+        assertTrue("Нахождение не в разделе 'Булки'", mainPage.isHeaderBunsVisible());
     }
 
     @Test

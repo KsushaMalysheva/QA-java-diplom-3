@@ -16,7 +16,8 @@ public class MainPageBurgersChromeTests {
     @Before
     public void setup() {
         //открыть браузер в максимальном разрешении
-        Configuration.startMaximized = true;
+        //Configuration.startMaximized = true;
+        Configuration.browserSize = "1980x1000";
     }
 
     @After
@@ -47,7 +48,7 @@ public class MainPageBurgersChromeTests {
         MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);
 
         //проверить на дисплее заголовок "Булки"
-        assertTrue(mainPage.isHeaderBunsVisible());
+        assertTrue("Нахождение не в разделе 'Булки'", mainPage.isHeaderBunsVisible());
     }
 
     @Test

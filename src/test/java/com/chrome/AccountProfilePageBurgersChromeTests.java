@@ -25,7 +25,7 @@ public class AccountProfilePageBurgersChromeTests {
     public void setup() {
 
         //открыть браузер в максимальном разрешении
-        Configuration.startMaximized = true;
+        Configuration.browserSize = "1980x1000";
 
         //перейти на страницу тестового стенда
         MainPageBurgers mainPage = open(HOME_PAGE_BURGERS, MainPageBurgers.class);

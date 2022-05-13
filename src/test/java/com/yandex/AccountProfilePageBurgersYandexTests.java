@@ -26,7 +26,7 @@ public class AccountProfilePageBurgersYandexTests extends BaseBurgers {
     public void setup() {
 
         //открыть браузер в максимальном разрешении
-        Configuration.startMaximized = true;
+        Configuration.browserSize = "1980x1000";
 
         //запустить Яндекс браузер
         startYandexBrowser();

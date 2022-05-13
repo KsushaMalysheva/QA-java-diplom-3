@@ -25,7 +25,7 @@ public class RegistrationPageBurgersChromeTests {
     @Before
     public void setup() {
         //открыть браузер в максимальном разрешении
-        Configuration.startMaximized = true;
+        Configuration.browserSize = "1980x1000";
     }
 
     @After
