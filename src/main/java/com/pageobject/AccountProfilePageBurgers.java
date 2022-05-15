@@ -2,10 +2,11 @@ package com.pageobject;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-
 import static com.codeborne.selenide.Condition.exist;
+
 
 public class AccountProfilePageBurgers {
 
@@ -32,4 +33,5 @@ public class AccountProfilePageBurgers {
         constructorButton.shouldBe(exist);
         constructorButton.click();
     }
+
 }
